@@ -1,20 +1,20 @@
 [![Build Status](https://travis-ci.org/brave/browser-laptop.svg?branch=master)](https://travis-ci.org/brave/browser-laptop)
 
-# Brave Browser
+# Mindaptiv Browser
 
-Desktop browser for macOS, Windows, and Linux.
+Desktop browser for macOS, Windows, and Linux to showcase Essence Technologies.
 
-Follow [@brave](https://twitter.com/brave) on Twitter for important news and announcements.
+Follow [@brave](https://twitter.com/mindaptiv) on Twitter for important news and announcements.
 
 For other versions of our browser, please see:
-* iPhone - [brave/browser-ios](https://github.com/brave/browser-ios)
-* Android - [brave/browser-android](https://github.com/brave/browser-android)
+* iPhone - [mindaptiv/mind-browser-ios](https://github.com/brave/mind-browser-ios)
+* Android - [mindaptiv/mind-browser-android](https://github.com/brave/mind-browser-android)
 
 ## Downloads
 
-To download the latest release, [see our releases page](https://github.com/brave/browser-laptop/releases).
+To download the latest release, [see our releases page](https://github.com/mindaptiv/mind-browser-laptop/releases).
 
-For a more user-friendly download page, [please visit our website](https://brave.com/downloads.html).
+For a more user-friendly download page, [please visit our website](https://mindaptiv.com/downloads.html).
 
 ## Useful documentation
 
@@ -56,17 +56,17 @@ After installing the prerequisites:
 1. Clone the git repository from GitHub:
 
         # For beta testers:
-        git clone --depth 1 https://github.com/brave/browser-laptop
+        git clone --depth 1 https://github.com/mindaptiv/mind-browser-laptop
 
         # For devs over HTTPS:
-        git clone https://github.com/brave/browser-laptop
+        git clone https://github.com/mindaptiv/mind-browser-laptop
 
         # For devs over SSH:
-        git clone git@github.com:brave/browser-laptop.git
+        git clone git@github.com:mindaptiv/mind-browser-laptop.git
 
 2. Open the working directory:
 
-        cd browser-laptop
+        cd mind-browser-laptop
 
 3. Install the Node (v5+) dependencies:
 
@@ -76,15 +76,15 @@ If this fails on Linux with an error related to `abp-filter-parser-cpp`, try upd
 
 ### Troubleshooting
 
-Additional notes on troubleshooting installation issues are in the [Troubleshooting](https://github.com/brave/browser-laptop/wiki/Troubleshooting) page in the Wiki.
+Additional notes on troubleshooting installation issues are in the [Troubleshooting](https://github.com/mindaptiv/mind-browser-laptop/wiki/Troubleshooting) page in the Wiki.
 
 ### Preconfigured VMs
 
-Some platforms are available as pre-configured VMs. See the [readme](https://github.com/brave/browser-laptop/blob/master/test/vms/vagrant/README.md) for details.
+Some platforms are available as pre-configured VMs. See the [readme](https://github.com/mindaptiv/mind-browser-laptop/blob/master/test/vms/vagrant/README.md) for details.
 
 ## Development
 
-You will also have to have two terminal tabs up to run Brave. One for Brave to watch for changes to the code, and one to run Brave.
+You will also have to have two terminal tabs up to run Mindaptiv. One for Mindaptiv to watch for changes to the code, and one to run Mindaptiv.
 
 To run a development version of the browser, run the following on the command line:
 
@@ -98,7 +98,7 @@ To run the tests:
 
     npm test
 
-Some errors related to [brave/electron](https://github.com/brave/electron) update can be fixed by doing a clean install:
+Some errors related to [mindaptiv/mind-electron](https://github.com/mindaptiv/mind-electron) update can be fixed by doing a clean install:
 
     rm -rf node_modules/
     npm install
@@ -112,11 +112,11 @@ Brave uses port 8080 to communicate between its client and server sides by defau
 e.g.
 npm config set brave:port 9001
 
-Additional notes on troubleshooting development issues are in the [Troubleshooting](https://github.com/brave/browser-laptop/wiki/Troubleshooting) page in the Wiki.
+Additional notes on troubleshooting development issues are in the [Troubleshooting](https://github.com/mindaptiv/mind-browser-laptop/wiki/Troubleshooting) page in the Wiki.
 
-### Running inside of a development version of Brave's Electron fork
+### Running inside of a development version of Mindaptiv Electron fork
 
-We are using a [fork of Electron with some minor modifications](https://github.com/brave/electron). We try to upstream everything to [electron/electron](https://github.com/electron/electron) but forking allows us to take patches before upstreaming.
+We are using a [fork of Electron with some minor modifications](https://github.com/mindaptiv/mind-electron). We try to upstream everything to [electron/electron](https://github.com/electron/electron) but forking allows us to take patches before upstreaming.
 
 By default, we provide pre-built binaries when you `npm install` with our own fork of [electron-prebuilt](https://github.com/brave/electron-prebuilt).
 
