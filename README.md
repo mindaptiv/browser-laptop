@@ -1,14 +1,12 @@
-[![Build Status](https://travis-ci.org/brave/browser-laptop.svg?branch=master)](https://travis-ci.org/brave/browser-laptop)
-
 # Mindaptiv Browser
 
 Desktop browser for macOS, Windows, and Linux to showcase Essence Technologies.
 
-Follow [@brave](https://twitter.com/mindaptiv) on Twitter for important news and announcements.
+Follow [@mindaptiv](https://twitter.com/mindaptiv) on Twitter for important news and announcements.
 
 For other versions of our browser, please see:
-* iPhone - [mindaptiv/mind-browser-ios](https://github.com/brave/mind-browser-ios)
-* Android - [mindaptiv/mind-browser-android](https://github.com/brave/mind-browser-android)
+* iPhone - [mindaptiv/mind-browser-ios](https://github.com/adaptive/mind-browser-ios)
+* Android - [mindaptiv/mind-browser-android](https://github.com/adaptiv/mind-browser-android)
 
 ## Downloads
 
@@ -24,7 +22,7 @@ For a more user-friendly download page, [please visit our website](https://minda
 
 ## Build prerequisites
 
-You'll need certain packages installed before you can build and run Brave locally.
+You'll need certain packages installed before you can build and run Mindaptiv locally.
 
 ### All platforms
 
@@ -43,7 +41,7 @@ Ensure you also have the following installed (required by node-gyp):
 * [Python 2.7](https://www.python.org/downloads/)
 * [Visual Studio 2013 or 2015](https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx)
 
-After being installed, Visual Studio 2015 may [require some additional configuration](https://github.com/brave/browser-laptop/wiki/Configuring-Visual-Studio-2015).
+After being installed, Visual Studio 2015 may [require some additional configuration](https://github.com/mindaptiv/mind-browser-laptop/wiki/Configuring-Visual-Studio-2015).
 
 ###  Linux
 
@@ -72,7 +70,7 @@ After installing the prerequisites:
 
         npm install
 
-If this fails on Linux with an error related to `abp-filter-parser-cpp`, try updating to Node 6.1 and `node-gyp` 3.3.1 (see discussion at https://github.com/brave/browser-laptop/issues/214)
+If this fails on Linux with an error related to `abp-filter-parser-cpp`, try updating to Node 6.1 and `node-gyp` 3.3.1 (see discussion at https://github.com/adaptiv/mind-browser-laptop/issues/214)
 
 ### Troubleshooting
 
@@ -110,7 +108,7 @@ If this does not work, please clear out your ~/.electron first and try again.
 Brave uses port 8080 to communicate between its client and server sides by default. If you are using port 8080 for something else (e.g. a web proxy) then you can set the node config to make it use a different one.
 
 e.g.
-npm config set brave:port 9001
+npm config set mindaptiv:port 9001
 
 Additional notes on troubleshooting development issues are in the [Troubleshooting](https://github.com/mindaptiv/mind-browser-laptop/wiki/Troubleshooting) page in the Wiki.
 
@@ -118,14 +116,14 @@ Additional notes on troubleshooting development issues are in the [Troubleshooti
 
 We are using a [fork of Electron with some minor modifications](https://github.com/mindaptiv/mind-electron). We try to upstream everything to [electron/electron](https://github.com/electron/electron) but forking allows us to take patches before upstreaming.
 
-By default, we provide pre-built binaries when you `npm install` with our own fork of [electron-prebuilt](https://github.com/brave/electron-prebuilt).
+By default, we provide pre-built binaries when you `npm install` with our own fork of [electron-prebuilt](https://github.com/mindaptiv/electron-prebuilt).
 
 If you want to modify the code to Electron itself, then you'll need to build it.  An example of why you might do that would be exposing a new event to the webview from Electron.
 
 Build instructions:
-- [OSX build instructions](https://github.com/brave/electron/blob/master/docs/development/build-instructions-osx.md)
-- [Windows build instructions](https://github.com/brave/electron/blob/master/docs/development/build-instructions-windows.md)
-- [Linux build instructions](https://github.com/brave/electron/blob/master/docs/development/build-instructions-linux.md)
+- [OSX build instructions](https://github.com/mindaptiv/electron/blob/master/docs/development/build-instructions-osx.md)
+- [Windows build instructions](https://github.com/mindaptiv/electron/blob/master/docs/development/build-instructions-windows.md)
+- [Linux build instructions](https://github.com/mindaptiv/electron/blob/master/docs/development/build-instructions-linux.md)
 
 Once you're happy with the changes you've made in the electron fork, you can test the changes locally by building and then copying the output files over the `node_modules/electron-prebuilt` for browser-laptop.
 
